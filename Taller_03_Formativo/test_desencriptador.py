@@ -29,3 +29,8 @@ def test_roundtrip_texto_largo():
     texto = "Mensaje " * 100
     llave = "super_secreta"
     assert desencriptar(encriptar(texto, llave), llave) == texto
+
+
+# docker run -it crypto-app-matias-carcamo bash
+# Ahora estás "dentro" del contenedor
+# Puedes ejecutar: python encriptador.py
